@@ -5,35 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="items-1">
-          <div class="item active">
+         
+          <div class="current-image active">
+             <!--
             <img src="img/01.webp" alt="">
-          </div>
-
-          <div class="item">
-            <img src="img/02.webp" alt="">
-          </div>
-
-          <div class="item">
-            <img src="img/03.webp" alt="">
-          </div>
-
-          <div class="item">
-            <img src="img/04.webp" alt="">
-          </div>
-
-          <div class="item">
-            <img src="img/05.webp" alt="">
+            <div class="text">
+              <h3>Marvel's Spiderman Miles Morale</h3>
+              <p>Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.</p>
+            </div>
+          -->
           </div>
         </div>     
 
         <div class="items-2">
             <div class="small-items">
-              <div class="prev">↑</div>
+              <button class="prev">
+                <i class="fa-solid fa-chevron-up"></i>
+              </button> 
             </div>
 
             <div class="small-items">
@@ -49,10 +43,20 @@
             </div>
 
             <div class="small-items">
-              <div class="next">↓</div>
+              <button class="next">
+                <i class="fa-solid fa-chevron-down"></i>
+              </button> 
             </div>
         </div>
     </div>
+
+    <template id="current-image">
+      <img src="img/01.webp" alt="">
+      <div class="text">
+        <h3>Marvel's Spiderman Miles Morale</h3>
+        <p>Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man.</p>
+      </div>
+    </template>
 
     <script src="main.js"></script>
 </body>
